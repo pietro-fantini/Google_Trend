@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Trends Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Google Trends Visualizer</h1>
+        </header>
+        <div class="search-container">
+            <input type="text" id="keywordInput" placeholder="Enter a keyword">
+            <button onclick="fetchTrendsData()">Get Trends Data</button>
+        </div>
+        <div>
+            <canvas id="trendsChart"></canvas>
+        </div>
+    </div>
+    <div class="background-image"></div>
+
+    <!--<script src="sketch.js"></script>-->
+    <script src="plot.js"></script>
+    
+</body>
+</html>
+
